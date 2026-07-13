@@ -1,0 +1,16 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: monospace;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    color: #66ccff;
+}
