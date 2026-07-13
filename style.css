@@ -1,16 +1,176 @@
-body {
-    background: #111;
-    color: #eee;
-    font-family: monospace;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
+```css
+* {
+    box-sizing: border-box;
 }
+
+
+body {
+
+    background: #080808;
+
+    color: #d0d0d0;
+
+    font-family: "Courier New", monospace;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 50px;
+
+}
+
+
+main {
+
+    border-left: 2px solid #245024;
+
+    padding-left: 35px;
+
+}
+
+
+header {
+
+    margin-bottom: 50px;
+
+}
+
+
+.system {
+
+    color: #ff4444;
+
+    letter-spacing: 2px;
+
+}
+
+
+nav {
+
+    margin-top: 20px;
+
+}
+
+
+nav a {
+
+    margin-right: 20px;
+
+}
+
 
 h1 {
-    font-size: 3rem;
+
+    font-size: 3.5rem;
+
+    color: #66ff66;
+
 }
 
-a {
-    color: #66ccff;
+
+h2 {
+
+    color: #8aff8a;
+
+    border-bottom: 1px solid #245024;
+
+    padding-bottom: 10px;
+
+    margin-top: 40px;
+
 }
+
+
+.terminal {
+
+    color: #55ff55;
+
+}
+
+
+.terminal::after {
+
+    content: "_";
+
+    animation: blink 1s infinite;
+
+}
+
+
+@keyframes blink {
+
+    50% {
+
+        opacity: 0;
+
+    }
+
+}
+
+
+a {
+
+    color: #66ff66;
+
+    text-decoration: none;
+
+}
+
+
+a:hover {
+
+    color: #ff4444;
+
+}
+
+
+.project {
+
+    background: #0d0d0d;
+
+    border: 1px solid #244824;
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    transition: 0.2s;
+
+}
+
+
+.project:hover {
+
+    border-color: #66ff66;
+
+    transform: translateX(5px);
+
+}
+
+
+.metadata {
+
+    color: #888;
+
+    font-size: 0.9rem;
+
+    margin: 20px 0;
+
+}
+
+
+footer {
+
+    margin-top: 70px;
+
+    color: #666;
+
+    font-size: 0.85rem;
+
+    border-top: 1px solid #222;
+
+    padding-top: 20px;
+
+}
+```
