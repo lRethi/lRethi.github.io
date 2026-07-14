@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About | Livia</title>
+    <title>Livia | About</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,10 +23,10 @@
                  ++++++++++++
              ++++++++++++++++++++
           +++++  +++++ + +++++ +++++
-          ++    ++++  +++  +++    =+
-                +++   +++  =+++
-          ++    ++++  +++  +++    +++
-          ++++++ ++++    ++++++++++++
+          ++    ++++  +++  +++    ++
+                +++   +++   +++
+          ++    ++++  +++  +++    ++
+          ++++++ ++++     ++++ ++++++
           +++++++++++++++++++++++++++
            ++      =+++++++=      ++
             +        +++++        +
@@ -57,15 +57,22 @@
                     </p>
 
                     <p class="connection">
-                        Secure relay established...<br>
+                        <span class="dot">Secure relay established</span><br>
                         Encryption: ENABLED
                     </p>
 
-                    <h1>About</h1>
+                    <p>
+                        Authenticated as
+                        <span class="user">liv</span>@<span class="host">theredstar</span>
+                    </p>
+
+                    <h1>about me</h1>
 
                 </div>
 
             </div>
+
+            <footer><blockquote class="quote">"A Beast I am, lest a Beast I become." <cite> - the riddle, vampire the masquerade</cite></blockquote></footer>
 
             <nav>
                 <a href="index.html">[~] >>></a>
@@ -91,6 +98,7 @@
                 <li><strong>[WMG] ::   </strong> i3wm</li>
                 <li><strong>[CPU] ::   </strong> amd fx-8370e</li>
                 <li><strong>[GPU] ::   </strong> amd rx 580 2048sp</li>
+                <li><strong>[RAM] ::   </strong> 16gb ddr3</li>
             </ul>
 
 
@@ -112,8 +120,8 @@
 
             <p>
                 Most of what I learn eventually becomes a personal project. I enjoy experimenting with new
-                technologies through practical applications, whether that's an embedded device, a web
-                application, or an interactive game.
+                technologies through practical applications, whether that comes from a direct creation of mine
+                or by picking apart the inner workings of things I'm doing.
             </p>
 
             <p>
@@ -124,9 +132,15 @@
             </p>
 
             <p>
+                Besides reading, I greatly enjoy writing poetry, playing strategy and/or RPG games, DM'ing
+                or playing tabletop RPG's (such as VtM, DnD, CoC, and a few systems of my own), listening to
+                music, and trying out new things whenever I can.
+            </p>
+
+            <p>
                 This portfolio was inspired by <em>SchreckNet</em> from
                 <em>Vampire: The Masquerade</em>, which also serves as the inspiration behind my Linux
-                desktop customization.
+                desktop ricing.
             </p>
 
 
@@ -143,7 +157,8 @@
                 <li>Game development</li>
                 <li>Tabletop RPGs</li>
                 <li>History and speculative fiction</li>
-                <li>Books and worldbuilding</li>
+                <li>Books, poetry and worldbuilding</li>
+                <li>Videogames, mostly strategy or rpg</li>
             </ul>
 
 
@@ -160,14 +175,16 @@
                 <li>Exploring Machine Learning and Artificial Intelligence</li>
             </ul>
 
-
             <p class="terminal">
-                <span class="prompt">[~/about]</span> >>> cat quote.txt
+                <span class="prompt">[~/about]</span> >>> ls ~/awards/
             </p>
 
-            <blockquote class="quote">
-                "The beast I am, lest the Beast I become."
-            </blockquote>
+            <h2>Awards</h2>
+            <ul class="award-info">
+                <li><strong>MOBFOG 2017</strong>- <gold><b>Gold</b> Medal</gold></li>
+                <li><strong>OBA 2017</strong>- <gold><b>Gold</b> Medal</gold></li>
+                <li><strong>OBMEP 2017</strong>- <silver><b>Silver</b> Medal</silver></li>
+            </ul>
 
         </section>
 
@@ -177,8 +194,8 @@
                 <span class="prompt">[~/about]</span> >>> logout
             </p>
 
-            <p>
-                Saving session...
+            <p class="dot">
+                Saving session
             </p>
 
             <p>
@@ -186,7 +203,7 @@
             </p>
 
             <p class="system">
-                Last login: Never.
+                Last login: <span class="system-end">Never.</span>
             </p>
 
         </footer>

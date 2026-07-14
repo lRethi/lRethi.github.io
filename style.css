@@ -8,17 +8,23 @@
 
     --green: #00ff41;
 
-    --green-light: #84ff84;
+    --green-light: #5eff5e;
 
-    --green-dark: #008f2d;
+    --green-dark: #00bb3b;
 
     --red: #ff4136;
+
+    --dark-red: #c71717;
 
     --blue: #56b6ff;
 
     --yellow: #ffd54f;
 
     --border: #003d12;
+
+    --gold-color: #ffae00;
+    --silver-color: #d4d4d4;
+    --bronze-color: #e76800;
 
 }
 
@@ -61,7 +67,7 @@ body::before {
     inset: 0;
 
     background: radial-gradient(circle at center,
-            rgba(0, 255, 65, .05),
+            rgba(0, 94, 23, 0.089),
             transparent 60%);
 
     pointer-events: none;
@@ -101,6 +107,8 @@ header {
     color: var(--green);
 
     margin-bottom: 10px;
+
+    min-height: 7rem;
 
 }
 
@@ -234,8 +242,6 @@ li::before {
 
 .quote {
 
-    margin: 30px 0;
-
     padding-left: 18px;
 
     border-left: 2px solid var(--green);
@@ -302,6 +308,11 @@ a:hover {
 
 }
 
+.quote cite {
+    font-style: italic;
+    color: #8bb68b;
+}
+
 footer {
 
     margin-top: 80px;
@@ -352,7 +363,7 @@ footer {
 .system-info strong {
     color: var(--green);
     display: inline-block;
-    width: 12ch;
+    width: 14ch;
 }
 
 .hyfetch-info {
@@ -368,6 +379,52 @@ footer {
     color: var(--green);
     display: inline-block;
     width: 8ch;
+}
+
+.award-info li {
+    margin: 8px 0;
+}
+
+.award-info strong {
+    color: var(--green);
+    display: inline-block;
+    width: 14ch;
+}
+
+.award-info gold {
+    color: var(--gold-color);
+}
+.award-info silver {
+    color: var(--silver-color);
+}
+.award-info bronze {
+    color: var(--bronze-color);
+}
+
+.system-end {
+    color: var(--dark-red);
+
+    animation: blink 3s infinite;
+}
+
+.dot::after {
+    content: "...";
+    display: inline-block;
+    overflow: hidden;
+    height: 2ch;
+    white-space: nowrap;
+    animation: dots 2s steps(3, end) infinite;
+}
+
+@keyframes dots {
+    from {
+        width: 1ch;
+    }
+
+    75%,
+    to {
+        width: 3ch;
+    }
 }
 
 @keyframes blink {
