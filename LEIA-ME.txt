@@ -1,9 +1,0 @@
-PORTFOLIO: TRADUÇÕES
-
-Arquivos modificados: index.html, about.html, projects.html, contact.html, style.css, translations.js, script.js e as páginas HTML em projects/.
-
-Para aplicar ao repositório existente, extraia este pacote dentro da pasta clonada e permita a substituição dos arquivos com o mesmo nome. Mantenha os demais recursos do projeto, especialmente a pasta fonts/ se ela já existir, porque style.css usa fonts/FiraCode-Regular.woff2.
-
-Os botões EN, PT e ES aparecem no topo de todas as páginas. A escolha fica salva no navegador e, na primeira visita, o idioma é escolhido com base no idioma do navegador. A troca de idioma atualiza o atributo lang da página e não remove a estrutura interna dos elementos traduzidos.
-
-O pacote não contém o histórico Git nem recursos que não precisaram ser alterados.
