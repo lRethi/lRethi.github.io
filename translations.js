@@ -420,7 +420,7 @@ const translations = {
         "home.label_location": "[UBICACIÓN]",
         "home.location": "Brasil - SRS MG",
         "home.label_wip": "[EN DESARROLLO]",
-        "home.wip": "Cronofobia",
+        "home.wip": "[...]",
         "home.label_occupation": "[OCUPACIÓN]",
         "home.occupation": "Estudiante de Ingeniería en ETEFMC",
         "home.cmd_skills": "ls skills/",
