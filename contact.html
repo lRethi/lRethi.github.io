@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Livia | Contact</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="title.contact">Livia | Contact</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <main>
-
-        <header>
-
-            <div class="hero">
-
-                <pre class="ascii">
-                      ++
+<body><main>
+<header>
+<div class="hero">
+<pre class="ascii">                      ++
                  ++++++++++++
              ++++++++++++++++++++
           +++++  +++++ + +++++ +++++
@@ -43,122 +33,43 @@
                       ++++
                       +++
                       +++
-                       +
-        </pre>
-
-                <div class="hero-info">
-
-                    <p class="system">
-                        SCHRECKNET NODE // ONLINE
-                    </p>
-
-                    <p class="terminal">
-                        <span class="prompt">[~/contact]</span> >>>
-                    </p>
-
-                    <p class="connection">
-                        <span class="dot">Opening communication channel</span><br>
-                        Ready to receive transmission<br>
-                        Encryption: ENABLED
-                    </p>
-
-                    <p>
-                        Authenticated as
-                        <span class="user">liv</span>@<span class="host">theredstar</span>
-                    </p>
-
-                    <h1>contact</h1>
-
-                </div>
-
-            </div>
-
-            <footer>>>> always checking for new messages, please hire me <em>(for legal reasons this is a joke)</em></footer>
-
-            <nav>
-                <a href="index.html">[~] >>></a>
-                <a href="about.html">[~/about] >>></a>
-                <a href="projects.html">[~/projects] >>></a>
-                <a href="contact.html">[~/contact] >>></a>
-                <a href="https://github.com/lRethi">[~/github] >>></a>
-            </nav>
-
-        </header>
-
-        <section>
-
-            <p class="terminal">
-                <span class="prompt">[~/contact]</span> >>> connect --list
-            </p>
-
-            <h2>Communication Channels</h2>
-
-            <ul class="system-info">
-
-                <li>
-                    <strong>[GITHUB]</strong> ::
-                    <a href="https://github.com/lRethi">
-                        github.com/lRethi
-                    </a>
-                </li>
-
-                <li>
-                    <strong>[DISCORD]</strong> ::
-                    @lrethi
-                </li>
-
-                <li>
-                    <strong>[EMAIL]</strong> ::
-                    <a href="mailto:lrethi.dev@gmail.com">
-                        lrethi.dev@gmail.com
-                    </a>
-                </li>
-
-            </ul>
-
-        </section>
-
-        <section>
-
-            <p class="terminal">
-                <span class="prompt">[~/contact]</span> >>> send_message
-            </p>
-
-            <h2>Transmission Protocol</h2>
-
-            <p>
-                For professional inquiries, collaborations or project discussions,
-                please use one of the communication channels above.
-            </p>
-
-            <p>
-                Currently accepting incoming connections.
-            </p>
-
-        </section>
-
-        <footer>
-
-            <p class="terminal">
-                <span class="prompt">[~/contact]</span> >>> logout
-            </p>
-
-            <p>
-                Closing communication channel...
-            </p>
-
-            <p>
-                Connection to SCHRECKNET NODE terminated.
-            </p>
-
-            <p class="system">
-                NODE STATUS: <span class="system-end">ACTIVE</span>
-            </p>
-
-        </footer>
-
-    </main>
-
-</body>
-
-</html>
+                       +</pre>
+<div class="hero-info">
+<p class="system" data-i18n="common.schrecknet_online">SCHRECKNET NODE // ONLINE</p>
+<p class="terminal"><span class="prompt">[[~/contact]]</span> &gt;&gt;&gt;</p>
+<div class="connection"><p><span class="dot" data-i18n="contact.opening">Opening communication channel</span><br><span data-i18n="contact.ready">Ready to receive transmission</span><br><span data-i18n="common.encryption_enabled">Encryption: ENABLED</span></p></div>
+<p><span data-i18n="common.authenticated">Authenticated as</span> <span class="user">liv</span>@<span class="host">theredstar</span></p>
+<h1 data-i18n="contact.title">contact</h1>
+</div>
+</div>
+<footer class="header-note"><span data-i18n="contact.tagline">{T["contact.tagline"][0]}</span></footer>
+<nav aria-label="Primary navigation">
+<a href="index.html" data-i18n="nav.home">[~] >>></a>
+<a href="about.html" data-i18n="nav.about">[~/about] >>></a>
+<a href="projects.html" data-i18n="nav.projects">[~/projects] >>></a>
+<a href="contact.html" data-i18n="nav.contact">[~/contact] >>></a>
+<a href="https://github.com/lRethi" data-i18n="nav.github">[~/github] >>></a>
+</nav>
+</header>
+<section>
+<p class="terminal"><span class="prompt">[~/contact]</span> &gt;&gt;&gt; connect --list</p>
+<h2 data-i18n="contact.channels">Communication Channels</h2>
+<ul class="system-info">
+<li><strong data-i18n="contact.github">[GITHUB]</strong> :: <a href="https://github.com/lRethi">github.com/lRethi</a></li>
+<li><strong data-i18n="contact.discord">[DISCORD]</strong> :: @lrethi</li>
+<li><strong data-i18n="contact.email">[EMAIL]</strong> :: <a href="mailto:lrethi.dev@gmail.com">lrethi.dev@gmail.com</a></li>
+</ul>
+</section>
+<section>
+<p class="terminal"><span class="prompt">[~/contact]</span> &gt;&gt;&gt; <span data-i18n="contact.cmd_send">send_message</span></p>
+<h2 data-i18n="contact.protocol">Transmission Protocol</h2>
+<p data-i18n="contact.pro_inquiries">For professional inquiries, collaborations or project discussions, please use one of the communication channels above.</p>
+<p data-i18n="contact.accepting">Currently accepting incoming connections.</p>
+</section>
+<footer>
+<p class="terminal"><span class="prompt">[~/contact]</span> &gt;&gt;&gt; <span data-i18n="common.logout">logout</span></p>
+<p data-i18n="common.communication_closing">Closing communication channel...</p>
+<p data-i18n="common.connection_terminated">Connection to SCHRECKNET NODE terminated.</p>
+<p class="system"><span data-i18n="common.node_status">NODE STATUS:</span> <span class="system-end" data-i18n="common.active">ACTIVE</span></p>
+</footer>
+</main><script src="translations.js"></script><script src="script.js"></script></body></html>

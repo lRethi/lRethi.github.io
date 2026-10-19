@@ -1,328 +1,197 @@
 :root {
-
     --bg: #000000;
-
     --surface: #040404;
-
     --text: #e8ffe8;
-
     --green: #00ff41;
-
     --green-light: #5eff5e;
-
     --green-dark: #00bb3b;
-
     --red: #ff4136;
-
     --dark-red: #c71717;
-
-    --blue: #56b6ff;
-
-    --yellow: #ffd54f;
-
     --border: #003d12;
-
     --gold-color: #ffae00;
     --silver-color: #d4d4d4;
     --bronze-color: #e76800;
-
 }
 
 * {
-
-    margin: 0;
-
-    padding: 0;
-
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
 }
 
 body {
-
-    background: var(--bg);
-
-    color: var(--text);
-
-    font-family: "Fira Code", monospace;
-
-    line-height: 1.7;
-
     max-width: 1050px;
-
     margin: auto;
-
     padding: 45px;
-
     overflow-x: hidden;
-
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Fira Code", monospace;
+    line-height: 1.7;
 }
 
 body::before {
-
-    content: "";
-
     position: fixed;
-
+    z-index: -1;
     inset: 0;
-
-    background: radial-gradient(circle at center,
-            rgba(0, 94, 23, 0.089),
-            transparent 60%);
-
+    background: radial-gradient(circle at center, rgba(0, 94, 23, 0.089), transparent 60%);
+    content: "";
     pointer-events: none;
-
 }
 
 main {
-
     position: relative;
-
-    border-left: 2px solid var(--green-dark);
-
+    min-width: 0;
     padding-left: 35px;
-
+    border-left: 2px solid var(--green-dark);
 }
 
 header {
-
     margin-bottom: 60px;
-
 }
 
 .system {
-
-    color: var(--red);
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
     margin-bottom: 12px;
-
+    color: var(--red);
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .connection {
-
-    color: var(--green);
-
+    min-height: 4rem;
     margin-bottom: 10px;
-
-    min-height: 7rem;
-
+    color: var(--green);
 }
 
 nav {
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 25px;
     margin-top: 30px;
-
 }
 
 nav a {
-
     color: var(--green);
-
     text-decoration: none;
-
-    margin-right: 25px;
-
-    transition: .15s;
-
+    transition: color 0.15s;
 }
 
-nav a:hover {
-
+nav a:hover,
+a:hover {
     color: var(--red);
-
 }
 
 h1 {
-
-    font-size: 3.4rem;
-
-    color: var(--green);
-
     margin: 30px 0;
-
+    color: var(--green);
+    font-size: clamp(2rem, 6vw, 3.4rem);
+    overflow-wrap: anywhere;
 }
 
 h2 {
-
-    color: var(--green-light);
-
-    font-size: 1.5rem;
-
     margin: 35px 0 20px;
-
+    color: var(--green-light);
+    font-size: 1.5rem;
 }
 
 section {
-
     margin-bottom: 60px;
-
 }
 
 p {
-
     margin: 15px 0;
-
 }
 
 ul {
-
-    list-style: none;
-
     margin-top: 20px;
-
+    list-style: none;
 }
 
 li {
-
     margin: 8px 0;
-
 }
 
 li::before {
-
-    content: "> ";
-
     color: var(--green);
-
+    content: "> ";
 }
 
 .terminal {
-
-    color: var(--text);
-
     margin: 30px 0 18px;
-
+    color: var(--text);
     font-weight: bold;
-
+    overflow-wrap: anywhere;
 }
 
 .terminal::after {
-
+    color: var(--green);
     content: "_";
-
-    color: var(--green);
-
     animation: blink 1s infinite;
-
 }
 
-.prompt {
-
-    color: var(--green);
-
-}
-
-.user {
-
-    color: var(--green);
-
-}
-
+.prompt,
+.user,
 .host {
-
     color: var(--green);
-
-}
-
-.path {
-
-    color: var(--green-light);
-
-}
-
-.command {
-
-    color: var(--text);
-
 }
 
 .quote {
-
     padding-left: 18px;
-
     border-left: 2px solid var(--green);
-
     color: var(--green-light);
-
     font-style: italic;
-
-    opacity: .9;
-
+    opacity: 0.9;
 }
 
 .project {
-
-    background: var(--surface);
-
-    border-left: 4px solid var(--green);
-
-    border-top: 1px solid var(--border);
-
-    border-right: 1px solid var(--border);
-
-    border-bottom: 1px solid var(--border);
-
-    padding: 22px;
-
     margin: 30px 0;
-
-    transition: .2s;
-
+    padding: 22px;
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    background: var(--surface);
+    transition: border-color 0.2s, transform 0.2s;
 }
 
 .project:hover {
-
-    border-left-color: var(--red);
-
     transform: translateX(6px);
-
+    border-left-color: var(--red);
 }
 
 .metadata {
-
-    color: #a0dca0;
-
     margin: 20px 0;
-
+    color: #a0dca0;
 }
 
 .metadata p {
-
     margin: 6px 0;
-
 }
 
 a {
-
     color: var(--green);
-
-}
-
-a:hover {
-
-    color: var(--red);
-
+    overflow-wrap: anywhere;
 }
 
 .quote cite {
-    font-style: italic;
     color: #8bb68b;
+    font-style: italic;
 }
 
 footer {
-
     margin-top: 80px;
-
     padding-top: 25px;
-
     border-top: 1px solid var(--border);
-
     color: #8bb68b;
+}
 
+.header-note {
+    margin-top: 10px;
 }
 
 .hero {
@@ -333,15 +202,17 @@ footer {
 }
 
 .ascii {
-    white-space: pre;
-    color: #00ff41;
-    line-height: 1;
-    margin: 0;
     flex-shrink: 0;
+    margin: 0;
+    color: var(--green);
+    font-size: 0.72rem;
+    line-height: 1;
+    white-space: pre;
 }
 
 .hero-info {
     display: flex;
+    min-width: 0;
     flex-direction: column;
     gap: 12px;
 }
@@ -351,34 +222,27 @@ footer {
     margin: 0;
 }
 
-.system-info {
-    font-family: "Fira Code", monospace;
-    list-style: none;
-}
-
-.system-info li {
-    margin: 8px 0;
-}
-
-.system-info strong {
-    color: var(--green);
-    display: inline-block;
-    width: 14ch;
-}
-
+.system-info,
 .hyfetch-info {
     font-family: "Fira Code", monospace;
     list-style: none;
 }
 
+.system-info li,
 .hyfetch-info li {
     margin: 8px 0;
 }
 
-.hyfetch-info strong {
-    color: var(--green);
+.system-info strong {
     display: inline-block;
-    width: 8ch;
+    width: 16ch;
+    color: var(--green);
+}
+
+.hyfetch-info strong {
+    display: inline-block;
+    min-width: 8ch;
+    color: var(--green);
 }
 
 .award-info li {
@@ -386,59 +250,134 @@ footer {
 }
 
 .award-info strong {
-    color: var(--green);
     display: inline-block;
-    width: 14ch;
+    min-width: 14ch;
+    color: var(--green);
 }
 
 .award-info gold {
     color: var(--gold-color);
 }
+
 .award-info silver {
     color: var(--silver-color);
 }
+
 .award-info bronze {
     color: var(--bronze-color);
 }
 
 .system-end {
     color: var(--dark-red);
-
     animation: blink 3s infinite;
 }
 
 .dot::after {
-    content: "...";
     display: inline-block;
-    overflow: hidden;
     height: 2ch;
+    overflow: hidden;
+    content: "...";
     white-space: nowrap;
     animation: dots 2s steps(3, end) infinite;
 }
 
-@keyframes dots {
-    from {
-        width: 1ch;
-    }
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 24px;
+}
 
-    75%,
-    to {
-        width: 3ch;
-    }
+.language-selector button {
+    min-width: 44px;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--green);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.language-selector button:hover,
+.language-selector button.active {
+    border-color: var(--green);
+    background: #003d12;
+    color: var(--green-light);
+}
+
+.language-selector button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--green-light);
+    outline-offset: 3px;
+}
+
+@keyframes dots {
+    from { width: 1ch; }
+    75%, to { width: 3ch; }
 }
 
 @keyframes blink {
+    50% { opacity: 0; }
+}
 
-    50% {
-
-        opacity: 0;
-
+@media (max-width: 760px) {
+    body {
+        padding: 24px 18px;
     }
 
+    main {
+        padding-left: 18px;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .ascii {
+        max-width: 100%;
+        overflow-x: auto;
+        font-size: 0.55rem;
+    }
+
+    .hero-info {
+        width: 100%;
+    }
+
+    .language-selector {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        gap: 8px 18px;
+    }
+
+    .system-info strong {
+        width: auto;
+        min-width: 14ch;
+    }
+
+    .project {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 @font-face {
     font-family: "Fira Code";
     src: url("fonts/FiraCode-Regular.woff2") format("woff2");
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
