@@ -48,7 +48,7 @@ const translations = {
         "home.label_location": "[LOCATION]",
         "home.location": "Brasil - SRS MG",
         "home.label_wip": "[CURRENT WIP]",
-        "home.wip": "Cronofobia",
+        "home.wip": "[...]",
         "home.label_occupation": "[OCCUPATION]",
         "home.occupation": "Engineering Student at ETEFMC",
         "home.cmd_skills": "ls skills/",
